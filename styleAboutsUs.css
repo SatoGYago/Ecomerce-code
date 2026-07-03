@@ -1,0 +1,98 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+header
+{
+    display: grid;
+    height: 20vh;
+    width: 99.2vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    background-color: black;
+
+    #usercart ul
+    {
+        display: flex;
+        margin-top: 2%;
+    }
+    .itemHeader2 
+    {
+        grid-row: span 2;
+        align-self: center;
+        justify-self: center;
+    }
+    .itemHeader3
+    {
+        grid-row: span 2;
+        justify-self: flex-end;
+        margin-right: 10%;
+        margin-top: 5%;
+
+        input 
+        {
+            height: 4vh;
+            border-style: none;
+            border-radius: 10px;
+        }
+    }
+
+    #logo
+    {
+        height: 12vh;
+    }
+
+    #menu
+    {
+        display: flex;
+        li 
+        {
+            margin: 10px;
+            list-style: none;
+            a
+            {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        margin-top: 8%;
+        justify-self: self-start;
+    }
+}
+
+main 
+{
+    display: grid;
+    height: 70vh;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+
+    #titulo
+    {
+        h1
+        {
+            font-size: 4em;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+
+    #paragrafo 
+    {
+        grid-row: span 4;
+        width: 80vw;
+        font-size: 1.5em;
+        justify-self: center;
+    }
+
+}
+
+footer
+{
+    width: 99.2vw;
+    height: 25vh;
+    background-color: #21005D;
+}
